@@ -19,5 +19,5 @@ cumLifetimeInf.r
 Creates a dataset of the expected cumulative number of infections for each age-group and two-month period.
 These are included as a variable in the database for analysis (2.).
 They can be run each time or, more conveniently, written to a file and read-in.
-A ready-made file is provided (and used in the code) - cumIntAgeStore_noitn_novill.txt.
+A ready-made file is provided (and used in the code) - cumInf_byIntAgegp_noitn_novill.txt.
 
