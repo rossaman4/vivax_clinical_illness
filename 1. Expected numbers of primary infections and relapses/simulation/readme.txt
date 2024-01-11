@@ -6,7 +6,7 @@ Master file to run the simulation code for each parameter set and combination of
 Each simulation provides the expected number of primary infections and relapses for each age-group and two-month interval.
 
 note 1: You will need to change the filepath at the top.
-note 2: The number of individuals simulated (numIndiv) is set to 10 for testing (in setSimulInputs.r).
+note 2: The number of individuals simulated (numIndiv) is set to 10 for testing (in simul.r).
 Once tested, it can be set to 1000 to minimise stochasticity.
 
 
