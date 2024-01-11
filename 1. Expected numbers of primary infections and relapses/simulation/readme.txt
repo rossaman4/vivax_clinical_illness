@@ -1,5 +1,5 @@
-Index to files for 1. Simulation model for relapses/simulation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Index to files for 1. Expected numbers of primary infectinos and relapses/simulation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 runSimul.r
 Master file to run the simulation code for each parameter set and combination of ITN and village covariates separately.
