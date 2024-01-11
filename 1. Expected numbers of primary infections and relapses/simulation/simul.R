@@ -14,7 +14,8 @@ source("setSimulInputs.r")
 source("simul_functions.r")
 
 # number of simulated individuals per agegroup
-numIndiv<-1000
+numIndiv<-10
+#numIndiv<-1000
 
 
 # Get results for each 2-month interval (endInterval) and age-group (midIntervalAgeYrs) in a loop
