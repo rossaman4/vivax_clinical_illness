@@ -1,5 +1,5 @@
 Index to files for 1. Simulation model for relapses/simulation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 runSimul.r
 Master file to run the simulation code for each parameter set and combination of ITN and village covariates separately.
@@ -20,6 +20,8 @@ Creates a dataset of the expected cumulative number of infections for each age-g
 These are included as a variable in the database for analysis (2.).
 They can be run each time or, more conveniently, written to a file and read-in.
 A ready-made file is provided (and used in the code) - cumInf_byIntAgegp_noitn_novill.txt.
+
+
 
 
 
