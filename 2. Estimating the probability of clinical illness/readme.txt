@@ -1,4 +1,4 @@
-2. Estimating the probability of illness
+2. Estimating the probability of clinical illness
 
 
 The R script runStanModels.r is the master file for this sub-directory. 
