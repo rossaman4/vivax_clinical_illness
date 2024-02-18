@@ -7,7 +7,6 @@ setwd("..")
 
 cumIntAgeStore<-read.table("cumInf_IntAgegp_noitn_novill.txt", sep=" ")
 
-
 # colour palette
 library("RColorBrewer")
 colblues=rev(brewer.pal(9,"Blues"))
@@ -37,6 +36,7 @@ for (i in 2:7) {
   lines(ageGpList,cumIntAgeStore[i+8,],type="p",pch=16,col=cols1[i])
 }
 
+# The input file was created assuming the force of infection of parameter set 2 - to adjust to the force to infection estimated for parameter set 1 multiply by 1.156
 lines(ageGpList,cumIntAgeStore[9,]*1.156,type="p",pch=16,col=cols2[1])
 for (i in 2:7) {
   lines(ageGpList,cumIntAgeStore[i+8,]*1.156,type="p",pch=16,col=cols2[i])
