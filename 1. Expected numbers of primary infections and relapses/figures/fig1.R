@@ -20,10 +20,10 @@ cols<-c(colgreens[1:4],colblues[4:1])
 # get simulated primary infections and relapses
 # Either read-in the simulations you have freshly run, or use those previously run  
 # 4p3 (parameter set 2)
-noitnnovill<-read.table("noitnnovill_4p3.txt", header=TRUE)
+noitnnovill<-read.table("noitnnovill_4p3param2.txt", header=TRUE)
 probClinData4p3<-noitnnovill
 # 5p9 (parameter set 1)
-noitnnovill<-read.table("noitnnovill_5p9.txt", header=TRUE)
+noitnnovill<-read.table("noitnnovill_5p9param1.txt", header=TRUE)
 probClinData5p9<-noitnnovill
 
 
