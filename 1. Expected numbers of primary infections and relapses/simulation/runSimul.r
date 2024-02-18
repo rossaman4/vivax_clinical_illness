@@ -30,8 +30,8 @@ setwd("...")
 numScenarioSets = 8
 itnvillIDList <- c(1,2,3,4,1,2,3,4)
 paramSetIDList <- c(2,2,2,2,1,1,1,1)
-file_name<-c("noitnnovill_4p3", "itnnovill_4p3", "noitnvill_4p3","itnvill_4p3", 
-             "noitnnovill_5p9", "itnnovill_5p9", "noitnvill_5p9","itnvill_5p9")
+file_name<-c("noitnnovill_4p3param2", "itnnovill_4p3param2", "noitnvill_4p3param2","itnvill_4p3param2", 
+             "noitnnovill_5p9param1", "itnnovill_5p9param1", "noitnvill_5p9param1","itnvill_5p9param1")
 
 
 
