@@ -1,21 +1,25 @@
 
-# ~~ fig2_table3.r ~~
+# ~~ fig 2_table3.r ~~
 
-#setwd("...")
+# specify path to your folders
+input_files_path = "C:/..../input files/"
+output_files_path = "C:/.../output files/"
+
+
 
 # from /input files (expected numbers of primary infections and relapses)
 # 5p9 (parameter set 1)
-itnvill<-read.table("input files/itnvill_5p9param1.txt", sep=" ", header=TRUE)
-itnnovill<-read.table("input files/itnnovill_5p9param1.txt", sep=" ", header=TRUE)
-noitnvill<-read.table("input files/noitnvill_5p9param1.txt", sep=" ", header=TRUE)
-noitnnovill<-read.table("input files/noitnnovill_5p9param1.txt", sep=" ", header=TRUE)
+itnvill<-read.table(paste0(input_files_path,"itnvill_5p9param1.txt"), sep=" ", header=TRUE)
+itnnovill<-read.table(paste0(input_files_path,"itnnovill_5p9param1.txt"), sep=" ", header=TRUE)
+noitnvill<-read.table(paste0(input_files_path,"noitnvill_5p9param1.txt"), sep=" ", header=TRUE)
+noitnnovill<-read.table(paste0(input_files_path,"noitnnovill_5p9param1.txt"), sep=" ", header=TRUE)
 xtemp5p9<-rbind(noitnvill,itnnovill,noitnnovill,itnvill)
 
 # 4p3 (parameter set 2)
-itnvill<-read.table("input files/itnvill_4p3param2.txt", sep=" ", header=TRUE)
-itnnovill<-read.table("input files/itnnovill_4p3param2.txt", sep=" ", header=TRUE)
-noitnvill<-read.table("input files/noitnvill_4p3param2.txt", sep=" ", header=TRUE)
-noitnnovill<-read.table("input files/noitnnovill_4p3param2.txt", sep=" ", header=TRUE)
+itnvill<-read.table(paste0(input_files_path,"itnvill_4p3param2.txt"), sep=" ", header=TRUE)
+itnnovill<-read.table(paste0(input_files_path,"itnnovill_4p3param2.txt"), sep=" ", header=TRUE)
+noitnvill<-read.table(paste0(input_files_path,"noitnvill_4p3param2.txt"), sep=" ", header=TRUE)
+noitnnovill<-read.table(paste0(input_files_path,"noitnnovill_4p3param2.txt"), sep=" ", header=TRUE)
 xtemp4p3<-rbind(noitnvill,itnnovill,noitnnovill,itnvill)
 
 
@@ -27,11 +31,12 @@ xtemp4p3<-rbind(noitnvill,itnnovill,noitnnovill,itnvill)
 # read in saved results for each model, extract parameter estimates, put in an array
 
 
+
 # 4p3
-B2_param2<-read.table("output files/out1_B2_4p3param2.txt", header=TRUE)
-B1_param2<-read.table("output files/out1_B1_4p3param2.txt", header=TRUE)
-A2_param2<-read.table("output files/out1_A2_4p3param2.txt", header=TRUE)
-A1_param2<-read.table("output files/out1_A1_4p3param2.txt", header=TRUE)
+B2_param2<-read.table(paste0(output_files_path,"out1_B2_4p3param2.txt"), header=TRUE)
+B1_param2<-read.table(paste0(output_files_path,"out1_B1_4p3param2.txt"), header=TRUE)
+A2_param2<-read.table(paste0(output_files_path,"out1_A2_4p3param2.txt"), header=TRUE)
+A1_param2<-read.table(paste0(output_files_path,"out1_A1_4p3param2.txt"), header=TRUE)
 
 mp4p3<-array(-9, dim=c(4,5))
 colnames(mp4p3)<-c("p1","p2","p3","cumhstar","gamma")
@@ -48,10 +53,10 @@ mp4p3
 
 
 # 5p9
-B2_param2<-read.table("out1_B2_5p9param1.txt", header=TRUE)
-B1_param2<-read.table("out1_B1_5p9param1.txt", header=TRUE)
-A2_param2<-read.table("out1_A2_5p9param1.txt", header=TRUE)
-A1_param2<-read.table("out1_A1_5p9param1.txt", header=TRUE)
+B2_param2<-read.table(paste0(output_files_path,"out1_B2_5p9param1.txt"), header=TRUE)
+B1_param2<-read.table(paste0(output_files_path,"out1_B1_5p9param1.txt"), header=TRUE)
+A2_param2<-read.table(paste0(output_files_path,"out1_A2_5p9param1.txt"), header=TRUE)
+A1_param2<-read.table(paste0(output_files_path,"out1_A1_5p9param1.txt"), header=TRUE)
 
 mp5p9<-array(-9, dim=c(4,5))
 colnames(mp5p9)<-c("p1","p2","p3","cumhstar","gamma")
@@ -110,7 +115,6 @@ xtemp5p9 <- getPreds(xtemp5p9, mp5p9)
 
 xtemp4p3$fevperchild <- xtemp4p3$fever500/xtemp4p3$nchildrenL
 xtemp5p9$fevperchild <- xtemp5p9$fever500/xtemp5p9$nchildrenL
-
 
 
 
@@ -248,7 +252,6 @@ points(intervalList,timeStore5p9$predA1, col="mediumorchid2", pch=16)
 points(intervalList,timeStore5p9$predA2, col="mediumorchid2", pch=16)
 
 text(15.5,3.8,"b")
-
 
 
 
