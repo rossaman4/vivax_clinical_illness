@@ -1,4 +1,4 @@
-Index to files for 1. Expected numbers of primary infectinos and relapses/simulation
+Index to files for 1. Expected numbers of primary infections and relapses/simulation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 runSimul.r
