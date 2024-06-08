@@ -9,7 +9,7 @@ The simulations here were done using version 45. The instructions for installing
 
 The released OpenMalaria code focuses on <i>P. falciparum<\i> and the vivax components are not up to date. 
 Therefore the new vivax files need to be swapped in and compiled before use. 
-The C++ code for each vivax model is given in /cpp. The simulations were run on a unix cluster - the code to swap innew C++ files, 
+The C++ code for each vivax model is given in /cpp. The simulations were run on a unix cluster - the code to swap in new C++ files, 
 complie and run OpenMalaria is given in the shell script *.sh files.   
 
 
