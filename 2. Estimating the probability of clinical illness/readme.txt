@@ -7,4 +7,4 @@ It reads in the clinical data and expected numbers of primary infections and rel
 
 The output Markov chains are stored in /output files. (The files here are smaller than those used in the manuscript due to filesize issues).
 
-The R scripts in /figures and tables  re-create figures 2, 3, 4, and tables 3 and S4.
+The R scripts in /figures and tables re-create figures 2, 3, 4, and tables 3 and S4.
