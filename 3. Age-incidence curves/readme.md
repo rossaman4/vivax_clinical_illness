@@ -6,6 +6,7 @@ The age-incidence curves for clinical episodes are simulated using OpenMalaria, 
 
 The scenarios and output files are in /scenarios. 
 
+
 If you would like to rerun the scenarios:
 
 The wiki is available at: https://github.com/SwissTPH/openmalaria/wiki. The simulations here were carried out using version 47. 
