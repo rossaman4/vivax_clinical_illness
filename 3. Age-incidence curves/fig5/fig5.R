@@ -6,10 +6,10 @@ require(ggpubr)
 library("RColorBrewer")
 
 
-# set sub-directory for fig a output files
+# set sub-directory for fig a output files (in wosera_A.zip)
 output_dirA<-"C:/out_dirA"
 
-# set sub-directory for figs b and c output files
+# set sub-directory for figs b and c output files (in vanuatu_ipti_BC.zip)
 output_dirB<-"C:/output_dirB"
 
 
@@ -257,6 +257,7 @@ figure
 
 
 p123 <- ggarrange(p1, p2, p3, ncol=3, nrow=1)
+
 
 
 
