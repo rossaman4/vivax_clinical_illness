@@ -101,7 +101,7 @@ p1 <- ggplot() +
   # add Wosera observed data
   geom_point(aes(x=agecatW, y=incidPerYearW), col="blue") +
   theme_bw() +
-  ylab("incidence pppy") +
+  ylab("number of cases pppy") +
   xlab("age in years") +
   theme(plot.margin = margin(t=1, r=1, b=0, l=0))
 
@@ -204,7 +204,7 @@ p2 <- ggplot() +
        geom_pointrange(aes(x=agecat92, y=incidV_92_93, ymin=CI_92_lower, ymax=CI_92_upper), col="blue", pch=17 ) +
        geom_pointrange(aes(x=agecat94, y=incidV_93_94, ymin=CI_94_lower, ymax=CI_94_upper), col="red") +
        theme_bw() +
-       ylab("incidence pppy") +
+       ylab("number of cases pppy") +
        xlab("age in years") +
        theme(plot.margin = margin(t=1, r=1, b=0, l=0))
 p2  
@@ -242,7 +242,7 @@ p3 <- ggplot() +
   # add IPTi observed data
   geom_pointrange(aes(x=month/12, y=incidpv, ymin=cilo, ymax=cihi), col="black" ) +
   theme_bw() +
-  ylab("incidence pppy") +
+  ylab("number of cases pppy") +
   xlab("age in years") +
   theme(plot.margin = margin(t=1, r=1, b=0, l=0))
 p3  
@@ -257,6 +257,7 @@ figure
 
 
 p123 <- ggarrange(p1, p2, p3, ncol=3, nrow=1)
+
 
 
 
