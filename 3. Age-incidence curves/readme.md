@@ -2,7 +2,7 @@
 
 ### 3. Age-incidence curves (Figure 5)
 
-The age-incidence curves for clinical episodes are simulated using _OpenMalaria_, a comprehensive simulation model for malaria dynamics and interventions. The vivax component corresponding to this manuscript has been included in the _OpenMalaria_ source code (version 48).
+The age-incidence curves for clinical episodes are simulated using _OpenMalaria_, a comprehensive simulation model for malaria dynamics and interventions. The vivax component corresponding to this manuscript has been included in the _OpenMalaria_ source code (from version 48).
 
 The scenarios and output files are in /scenarios. 
 
