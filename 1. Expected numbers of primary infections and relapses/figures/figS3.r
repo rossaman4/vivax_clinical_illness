@@ -31,7 +31,7 @@ par(mar=c(2.5,2,0.0,0.2))
 ageGpList<-c(1.25, 1.75, 2.25, 2.75, 3.25, 3.75, 4.25)
 
 plot(ageGpList,cumIntAgeStore[9,],type="p",ylim=c(-5,50),xlim=c(0.5,4.5),las=1,xlab="mid-point of age group in years",
-     ylab="cumulative number of infections", pch=16,col=cols1[1])
+     ylab="cumulative number", pch=16,col=cols1[1])
 for (i in 2:7) {
   lines(ageGpList,cumIntAgeStore[i+8,],type="p",pch=16,col=cols1[i])
 }
@@ -41,6 +41,7 @@ lines(ageGpList,cumIntAgeStore[9,]*1.156,type="p",pch=16,col=cols2[1])
 for (i in 2:7) {
   lines(ageGpList,cumIntAgeStore[i+8,]*1.156,type="p",pch=16,col=cols2[i])
 }
+
 
 
 
