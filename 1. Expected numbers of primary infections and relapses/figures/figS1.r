@@ -1,6 +1,6 @@
 
-# FIGURE: NUMBER OF CUMULATIVE INFECTIONS ---
-# S3 Figure
+# FIGURE: EXPEXTED NUMBER OF CUMULATIVE INFECTIONS ---
+# S1 Figure
 
 # set your directory
 setwd("..")
@@ -41,6 +41,7 @@ lines(ageGpList,cumIntAgeStore[9,]*1.156,type="p",pch=16,col=cols2[1])
 for (i in 2:7) {
   lines(ageGpList,cumIntAgeStore[i+8,]*1.156,type="p",pch=16,col=cols2[i])
 }
+
 
 
 
