@@ -50,14 +50,13 @@ prop.df<-cbind(B2_param2$mean, B1_param2$mean,A2_param2$mean,A1_param2$mean,
 
 
 
-# 2.5th centile - min 
+# 2.5th centile 
 proplb.df<-cbind(B2_param2$X2.5., B1_param2$X2.5.,A2_param2$X2.5., A1_param2$X2.5.,
                B2_param1$X2.5., B1_param1$X2.5., A2_param1$X2.5., A1_param1$X2.5.)
 
-# 97.5th centile - max
+# 97.5th centile 
 propub.df<-cbind(B2_param2$X97.5., B1_param2$X97.5.,A2_param2$X97.5., A1_param2$X97.5.,
                  B2_param1$X97.5., B1_param1$X97.5., A2_param1$X97.5., A1_param1$X97.5.)
-
 
 
 
@@ -80,6 +79,7 @@ par(tcl=-0.2)
 plot(interval, prop.df[,1], ylim=c(0,1.0), xlim=c(9,16), type="p", ylab="proportion", pch=16, col="black", xlab="", xaxt="n", las=1)
 segments(interval, proplb.df[,1], interval, propub.df[,1], lwd=1.4)
 axis(1,at=seq(9,16),label=roundLabel)
+
 
 
 
