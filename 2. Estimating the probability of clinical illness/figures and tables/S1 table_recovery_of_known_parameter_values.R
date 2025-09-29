@@ -1,5 +1,5 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# S4 table_recoveryOfKnownParameterValues.r
+# S1 table_recoveryOfKnownParameterValues.r
 #  
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -166,6 +166,7 @@ getEstimatesAllTrials(as.data.frame(out_a1_n))
 getEstimatesAllTrials(as.data.frame(out_a2_n))
 getEstimatesAllTrials(as.data.frame(out_a3_n))
 getEstimatesAllTrials(as.data.frame(out_a4_n))
+
 
 
 
