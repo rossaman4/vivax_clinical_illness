@@ -1,7 +1,7 @@
 ##### vivax_clinical_illness 
 
 Code and data for the manuscript <em>"The probability of Plasmodium vivax acute malarial illness following primary infection and relapse in Papua New Guinea"</em>
-<em>PLOS Negl Trop Dis</em>, 2025, <em>in press</em>
+<em>PLoS Negl Trop Dis</em> 19(10): e0013567. https://doi.org/10.1371/journal.pntd.0013567
 
 1. Expected numbers of primary infections and relapses
    - Code to output the expected numbers of primary infections and relapses by covariate category and two-month time interval   
